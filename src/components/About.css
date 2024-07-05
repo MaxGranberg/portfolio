@@ -1,0 +1,42 @@
+.perspective {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Fixed height to prevent layout issues */
+  text-align: center;
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure transition is consistent */
+}
+
+.card-back {
+  background-color: #2b8ef8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-front:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
