@@ -1,0 +1,7 @@
+.custom-object-position {
+  object-position: 57% center; /* Adjust the percentage to slightly move the image */
+}
+
+.custom-zoom {
+  transform: scale(1.25); /* Adjust the scale factor to zoom in */
+}
