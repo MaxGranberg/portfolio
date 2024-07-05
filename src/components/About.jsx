@@ -36,7 +36,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 p-8">
+    <div className="flex flex-col items-center min-h-screen p-8">
       <div className="max-w-6xl w-full mt-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {milestones.map((milestone, index) => (
