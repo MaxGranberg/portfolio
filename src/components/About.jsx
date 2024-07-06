@@ -1,7 +1,6 @@
 import React from 'react';
-import { FaGraduationCap, FaBriefcase, FaProjectDiagram, FaLaptopCode } from 'react-icons/fa';
+import { FaGraduationCap, FaBriefcase, FaLaptopCode, FaUser } from 'react-icons/fa';
 import './About.css';
-import { FaPerson } from 'react-icons/fa6';
 
 const milestones = [
   {
@@ -13,7 +12,7 @@ const milestones = [
   {
     icon: <FaBriefcase />,
     title: 'Jobberfarenheter',
-    description: 'Letar nu efter mitt första jobb i branschen. Tidigare har jag jobabt på lager, i butik och även drivit eget företag i några år.',
+    description: 'Letar nu efter mitt första jobb i branschen. Tidigare har jag jobbat på lager, i butik och även drivit eget företag i några år.',
     date: 'Juni 2015 - Nu',
   },
   {
@@ -23,7 +22,7 @@ const milestones = [
     date: 'Några av de tekniker & verktyg jag jobbat med under min utbildning & projekt.',
   },
   {
-    icon: <FaPerson />,
+    icon: <FaUser />,
     title: 'Intressen',
     description: 'Jag är en nyyfiken person som alltid vill lära mig mer och försöker alltid göra så bra som möjligt ifrån mig i vad jag än sätter mig in i. Spelat fotboll hela livet och är en lagspelare som vet vikten av att jobba i team och samabeta. Vänner och familj skulle beskriva mig som lugn, omtänksam och lojal.',
     date: 'Lite info om mig som person.',
@@ -47,11 +46,11 @@ const About = () => {
                 onClick={() => handleCardClick(index)}
               >
                 <div className="card-front bg-white p-6 rounded-lg shadow-lg flex flex-col items-center hover:shadow-xl">
-                  <div className="text-blue-500 text-4xl mb-4">{milestone.icon}</div>
+                  <div className="text-blue-500 text-5xl mb-4">{milestone.icon}</div>
                   <h3 className="text-xl font-bold mb-2 text-center">{milestone.title}</h3>
                   <p className="text-gray-400 text-sm flex justify-center">{milestone.date}</p>
                 </div>
-                <div className="card-back bg-blue-500 p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
+                <div className="card-back p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
                   <h3 className="text-xl font-bold mb-2 text-center">{milestone.title}</h3>
                   <p className="text-sm text-center">{milestone.description}</p>
                 </div>

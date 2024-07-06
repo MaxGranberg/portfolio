@@ -25,14 +25,16 @@
   border-radius: 10px;
 }
 
+
+
 .card-front {
   background-color: #fff;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure transition is consistent */
 }
 
 .card-back {
-  background-color: #2b8ef8;
-  color: white;
+  background: linear-gradient(145deg, #ffffff, #dddada);
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
 }
 
