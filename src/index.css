@@ -15,3 +15,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row !important;
+  }
+
+  nav ul li {
+    display: inline-block;
+
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+}

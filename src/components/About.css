@@ -1,3 +1,6 @@
+/* Add base styles here if needed */
+
+/* Existing styles for the About cards */
 .perspective {
   perspective: 1000px;
 }
@@ -25,8 +28,6 @@
   border-radius: 10px;
 }
 
-
-
 .card-front {
   background-color: #fff;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure transition is consistent */
@@ -41,4 +42,22 @@
 .card-front:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important; /* Ensure cards stack vertically */
+    gap: 2rem; /* Adjust gap between cards */
+    margin-top: -80px;
+  }
+
+  .card-inner {
+    width: 250px;
+  }
+
+  .card-front,
+  .card-back {
+    height: 280px; /* Ensure front and back cover the whole card */
+  }
 }

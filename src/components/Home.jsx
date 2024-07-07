@@ -3,9 +3,9 @@ import './Home.css'; // Import the custom CSS
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center h-screen text-white">
+    <div className="flex flex-col items-center h-screen text-white home-container">
       <div className="flex flex-col items-center mt-12">
-        <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg mb-4">
+        <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg mb-4 image-container">
           <img
             src="/profilbild.jpg"
             alt="Your Name"
