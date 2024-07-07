@@ -7,14 +7,13 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import TransitionWrapper from './components/TransitionWrapper';
 import './index.css';
-import './components/TransitionWrapper'; // Ensure CSS is imported
 
 function App() {
   return (
     <Router>
-      <div className="App min-h-screen flex flex-col relative bg-gradient-to-l from-blue-500 via-purple-700 to-blue-500">
+      <div className="App min-h-screen flex flex-col bg-gradient-to-l from-blue-500 via-purple-700 to-blue-500">
         <Header />
-        <main className="flex-grow overflow-hidden relative">
+        <main className="flex-grow overflow-hidden">
           <Routes>
             <Route
               path="/"

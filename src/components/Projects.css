@@ -112,9 +112,11 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .playing-card {
-    margin: 1rem auto;
+
     width: 90%;
     transform: none !important; /* Remove the angle effect */
+    margin-bottom: 24px;
+    margin-left: 0px !important;
   }
 
   .playing-card img {

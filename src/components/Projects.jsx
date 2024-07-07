@@ -54,7 +54,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center min-h-screen p-8">
       <div className="max-w-6xl w-full mt-8">
-        <div className="flex justify-center space-x-4 relative">
+        <div className="flex justify-center space-x-4 ">
           {projects.map((project, index) => (
             <div
               key={index}
