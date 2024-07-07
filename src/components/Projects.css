@@ -7,10 +7,12 @@
   position: relative;
   background: linear-gradient(145deg, #ffffff, #dddada);
   overflow: hidden;
+  z-index: 1; /* Ensure the card is above other elements */
 }
 
 .playing-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Bring the card to the front on hover */
 }
 
 .playing-card img {
@@ -42,6 +44,7 @@
   text-decoration: none;
   transition: background 0.3s;
   cursor: pointer;
+  z-index: 3; /* Ensure links are above other elements */
 }
 
 .playing-card a.bg-blue-600 {
@@ -65,6 +68,7 @@
   position: absolute;
   font-size: 1.5rem;
   color: #2563eb;
+  z-index: 0; /* Ensure icons are below the links */
 }
 
 .playing-card .top-left-icon {
@@ -115,7 +119,7 @@
 
   .playing-card img {
     height: 200px; /* Adjust the height for smaller screens */
-    object-fit:cover;
+    object-fit: cover;
     width: 100%; /* Ensure the image covers the card width */
   }
 
@@ -131,8 +135,8 @@
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
     cursor: pointer;
+    z-index: 3; /* Ensure links are above other elements */
   }
-
 
   /* Ensure cards stack vertically */
   .relative {
