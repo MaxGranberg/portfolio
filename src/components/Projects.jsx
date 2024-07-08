@@ -23,8 +23,8 @@ const projects = [
     icon: faServer,
   },
   {
-    title: 'Onlinespel med chattfunktion',
-    description: 'Onlinespel där jag byggt upp en 2D-värld där användare kan gå runt och chatta med varandra och spela minispel. Skapat under mitt första år av studierna, inte jobbat vidare med det sen dess.',
+    title: 'Onlinespel med chatt',
+    description: 'Onlinespel där jag byggt upp en 2D-värld där användare kan gå runt och chatta med varandra och spela minispel. Skapat under mitt första år av studierna.',
     technologies: ['React', 'Phaser 3', 'Tiled', 'Socket.IO', 'Node.js', 'Express', 'MongoDB'],
     image: '/ff.png',
     liveLink: 'https://fellowshipfields.netlify.app/',
@@ -34,7 +34,7 @@ const projects = [
   {
     title: 'The Color Game',
     description: 'Ett kul litet spel där användarens RGB kunskaper sätts på prov. Skapade ett NPM paket som jag sedan använde mig av när jag byggde spelet.',
-    technologies: ['Vanilla JavaScript', 'HTML', 'CSS'],
+    technologies: ['JavaScript', 'HTML', 'CSS'],
     image: '/rgb-game.png',
     liveLink: 'https://thergbcolorgame.netlify.app/',
     repoLink: 'https://github.com/MaxGranberg/TheColorGame',
@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-8">
-      <div className="max-w-6xl w-full mt-8">
+      <div className="max-w-6xl w-full">
         <div className="flex justify-center space-x-4 ">
           {projects.map((project, index) => (
             <div
@@ -73,7 +73,7 @@ const Projects = () => {
               <h2 className="text-2xl font-bold mb-2 text-gray-900">{project.title}</h2>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <p className="text-gray-600 mb-4">
-                <strong>Technologies:</strong> {project.technologies.join(', ')}
+                <strong>Tekniker:</strong> {project.technologies.join(', ')}
               </p>
               <div className="flex space-x-4">
                 <a

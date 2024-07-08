@@ -18,7 +18,23 @@ const milestones = [
   {
     icon: <FaLaptopCode />,
     title: 'Tekniker & Verktyg',
-    description: 'JavaScript | HTML | CSS | TailwindCSS | Bootstrap | React | Node.JS | Express | MongoDB | MySQL | Java | Python | GIT | Agil utveckling | REST |',
+    description: [
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'TailwindCSS',
+      'Bootstrap',
+      'React',
+      'Node.JS',
+      'Express',
+      'MongoDB',
+      'MySQL',
+      'Java',
+      'Python',
+      'GIT',
+      'Agil utveckling',
+      'REST',
+    ],
     date: 'Några av de tekniker & verktyg jag jobbat med under min utbildning & projekt.',
   },
   {
@@ -52,7 +68,15 @@ const About = () => {
                 </div>
                 <div className="card-back p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
                   <h3 className="text-xl font-bold mb-2 text-center">{milestone.title}</h3>
-                  <p className="text-sm text-center">{milestone.description}</p>
+                  {Array.isArray(milestone.description) ? (
+                    <ul className="text-sm text-center">
+                      {milestone.description.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-center">{milestone.description}</p>
+                  )}
                 </div>
               </div>
             </div>

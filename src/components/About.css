@@ -28,6 +28,18 @@
   border-radius: 10px;
 }
 
+.card-back ul {
+  list-style-type: disc;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.card-back li {
+  margin-bottom: 5px;
+}
+
 .card-front {
   background-color: #fff;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure transition is consistent */
