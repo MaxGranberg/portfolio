@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSoccerBall, faServer, faGamepad, faPalette } from '@fortawesome/free-solid-svg-icons';
+import { faSoccerBall, faServer, faGamepad, faPalette, faFilm } from '@fortawesome/free-solid-svg-icons';
 import './Projects.css';
 
 const projects = [
@@ -40,13 +40,22 @@ const projects = [
     repoLink: 'https://github.com/MaxGranberg/TheColorGame',
     icon: faPalette,
   },
+  {
+    title: 'Netflix search- & visualization tool',
+    description: 'Skoluppgift där jag använde mig av Elasticsearch. Visualisering av innehåll på Netflix, det finns även en sök och filtreringsfunktion.',
+    technologies: ['React', 'Tailwind CSS', 'Elasticsearch', 'Node.js', 'Express', 'Chart.js'],
+    image: '/netflix.png',
+    liveLink: 'https://netflix-visualization-ddbaf3e0356b.herokuapp.com/',
+    repoLink: 'https://github.com/MaxGranberg/netflix-visualization',
+    icon: faFilm,
+  },
 ];
 
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const getTransform = (index) => {
-    const angle = (index - 1.5) * 5; // Adjusting the angle to center the cards
+    const angle = (index - 1.8) * 5; // Adjusting the angle to center the cards
     const yOffset = Math.abs(angle) * 7; // Adjusting the vertical offset based on the angle
     return `rotate(${angle}deg) translateY(${yOffset}px)`;
   };
