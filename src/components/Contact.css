@@ -1,0 +1,27 @@
+.contact-card {
+  border: 2px solid #c2c1c1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background: linear-gradient(145deg, #ffffff, #dddada);
+  overflow: hidden;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .text-5xl {
+  color: #3b82f6;
+}
+
+.contact-card .text-xl {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-card .text-gray-700 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}

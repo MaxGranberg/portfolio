@@ -9,10 +9,13 @@ const NavBar = () => {
           <Link to="/" className="text-white text-lg md:text-xl hover:text-gray-300">Start</Link>
         </li>
         <li>
+          <Link to="/projects" className="text-white text-lg md:text-xl hover:text-gray-300">Projekt</Link>
+        </li>
+        <li>
           <Link to="/about" className="text-white text-lg md:text-xl hover:text-gray-300">Om mig</Link>
         </li>
         <li>
-          <Link to="/projects" className="text-white text-lg md:text-xl hover:text-gray-300">Projekt</Link>
+          <Link to="/contact" className="text-white text-lg md:text-xl hover:text-gray-300">Kontakt</Link>
         </li>
       </ul>
     </nav>
