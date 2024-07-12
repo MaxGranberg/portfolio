@@ -9,7 +9,7 @@ const contactDetails = [
   },
   {
     icon: <FaPhone />,
-    label: 'Phone',
+    label: 'Telefon',
     value: '0763-070757',
   },
   {
