@@ -8,7 +8,7 @@
   background: linear-gradient(145deg, #ffffff, #dddada);
   overflow: hidden;
   z-index: 1; /* Ensure the card is above other elements */
-  height: 530px;
+  height: 560px;
   width: 450px;
 }
 

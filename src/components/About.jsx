@@ -20,6 +20,8 @@ const milestones = [
     title: 'Tekniker & Verktyg',
     description: [
       'JavaScript',
+      'Typescript',
+      'Next.js',
       'HTML',
       'CSS',
       'TailwindCSS',
@@ -30,17 +32,16 @@ const milestones = [
       'MongoDB',
       'MySQL',
       'Java',
-      'Python',
       'GIT',
-      'Agil utveckling',
       'REST',
+      'Agil utveckling',
     ],
     date: 'Några av de tekniker & verktyg jag jobbat med under min utbildning & projekt.',
   },
   {
     icon: <FaUser />,
     title: 'Intressen',
-    description: 'Jag är en nyyfiken person som alltid vill lära mig mer och försöker alltid göra så bra som möjligt ifrån mig i vad jag än sätter mig in i. Spelat fotboll hela livet och är en lagspelare som vet vikten av att jobba i team och samabeta. Vänner och familj skulle beskriva mig som lugn, omtänksam och lojal.',
+    description: 'Jag är en nyyfiken person som alltid vill lära mig mer och försöker alltid göra så bra som möjligt ifrån mig i vad jag än sätter mig in i. Spelat fotboll hela livet och är en lagspelare som vet vikten av att jobba i team och samarbeta. Vänner och familj skulle beskriva mig som lugn, omtänksam och lojal.',
     date: 'Lite info om mig som person.',
   },
 ];
@@ -52,7 +53,8 @@ const About = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-8">
-      <div className="max-w-6xl w-full mt-24">
+      <h1 className="text-white md:text-3xl font-bold mt-8">Klicka på ett kort för ytterligare info</h1>
+      <div className="max-w-6xl w-full mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {milestones.map((milestone, index) => (
             <div key={index} className="perspective">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSoccerBall, faServer, faGamepad, faPalette, faFilm } from '@fortawesome/free-solid-svg-icons';
+import { faSoccerBall, faServer, faGamepad, faPalette, faFilm, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Projects.css';
 
 const projects = [
@@ -49,13 +49,22 @@ const projects = [
     repoLink: 'https://github.com/MaxGranberg/netflix-visualization',
     icon: faFilm,
   },
+  {
+    title: 'E-handelssida',
+    description: 'Projekt som jag just nu håller på med, därav inte helt färdigt. Bygger upp en e-handelssida från scratch som jag fyller med lite påhittade produkter.',
+    technologies: ['React', 'Next.js', 'Typescript', 'Tailwind CSS',],
+    image: '/ehandel.png',
+    liveLink: 'https://ehandel-delta.vercel.app/',
+    repoLink: 'https://github.com/MaxGranberg/ehandel',
+    icon: faShoppingCart,
+  },
 ];
 
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const getTransform = (index) => {
-    const angle = (index - 1.8) * 5; // Adjusting the angle to center the cards
+    const angle = (index - 2.2) * 2; // Adjusting the angle to center the cards
     const yOffset = Math.abs(angle) * 7; // Adjusting the vertical offset based on the angle
     return `rotate(${angle}deg) translateY(${yOffset}px)`;
   };
@@ -63,7 +72,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center min-h-screen p-8">
       <div className="max-w-6xl w-full">
-        <div className="flex justify-center space-x-4 ">
+        <div className="flex justify-center space-x-4">
           {projects.map((project, index) => (
             <div
               key={index}
